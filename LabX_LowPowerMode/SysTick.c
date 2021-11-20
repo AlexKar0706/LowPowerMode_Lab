@@ -21,13 +21,3 @@
 void SysTick_Init(unsigned long period){
 	/*All needed SysTick setting*/
 }
-
-/*
-**	NVIC interrupt handler
-**
-**	Function print CPU Temperature in the debbug console every 5 seconds
-**
-*/
-void SysTick_Handler(void){ 
-	Print_Temp();                   // Print Temperature
-}
