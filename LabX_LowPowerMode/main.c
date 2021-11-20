@@ -37,7 +37,7 @@ void Delay(unsigned long ms){unsigned long time;
 }
 
 /*
-** Initialisation of the PF3 port of the Port F
+** Initialisation of the PF3 and PF1 ports of the Port F
 **
 */
 void PortF_Init(void){ volatile unsigned long delay;
