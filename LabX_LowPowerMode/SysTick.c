@@ -6,7 +6,6 @@
 /* IMPORTS */
 #include "SysTick.h"
 #include "tm4c123gh6pm.h"
-#include "AnalogTemperature.h"
 
 /* FUNCTIONS */
 
