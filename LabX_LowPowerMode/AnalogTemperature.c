@@ -67,6 +67,5 @@ void Print_Temp() {
 	
   /*Convert analog value in Celsius degrees format*/
 	
-	printf("\nADC temperature code: %lu\n", result);
 	printf("Temperature in C: %.1f\n", celsius);
 }
