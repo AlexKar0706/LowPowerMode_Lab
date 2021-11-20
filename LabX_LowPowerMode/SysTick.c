@@ -29,12 +29,5 @@ void SysTick_Init(unsigned long period){
 **
 */
 void SysTick_Handler(void){ 
-	static unsigned long status = 0;  // Static value, that keep track of interrupts to simulate 5 seconds delay
-	
-	if (status == 5) {
-		Print_Temp();                   // Print Temperature
-		status = 0;                     // Reset static value 
-	}
-	
-	status++;
+	Print_Temp();                   // Print Temperature
 }
