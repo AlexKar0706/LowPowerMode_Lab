@@ -45,6 +45,46 @@ void PortF_Init(void){ volatile unsigned long delay;
 }
 
 /*
+**	Convert analog value to Celsius
+**
+**  Function use expression from Tiva C Series TM4C123GH6PM datasheet (p. 813) 
+**  
+**	Argument sample represents the analog sample, that has been recieved 
+**  from ADC0_In() functions
+**
+**  Function returns float value, that represents temperature of CPU in Celsius
+*/
+float Convert_To_Cel (unsigned long sample) {
+	return (147.5 - ((75 * 3.3 * sample) / 4096));
+}
+
+
+/*
+**	Print temperature in Celsius on TeXaS display
+**
+*/
+void Print_Temp() {
+	unsigned long result = 0;
+	float celsius = 0.0f;
+	
+	/*Read analog value from temperature sensor*/
+	
+  /*Convert analog value in Celsius degrees format*/
+	
+	printf("Temperature in C: %.1f\n", celsius);
+}
+
+/*
+**	NVIC interrupt handler
+**
+**	Function print CPU Temperature in the debbug console every 5 seconds
+**
+*/
+void SysTick_Handler(void){ 
+	Print_Temp();                   // Print Temperature
+}
+
+/*
 ** Main function, that only have normal mode active
 */
 int main (void) {
