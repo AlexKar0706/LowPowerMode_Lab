@@ -56,7 +56,7 @@ float Convert_To_Cel (unsigned long sample) {
 
 
 /*
-**	Print temperature in Celsius on LCD display
+**	Print temperature in Celsius on TeXaS display
 **
 */
 void Print_Temp() {
