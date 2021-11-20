@@ -93,7 +93,7 @@ int main (void) {
 	Temp_Sensor_Init();		// initialize temperature sensort
 	printf("\nStarting active mode programm\n");
 	while (1) {
-		Delay(2000);								// Simulate 5 seconds delay
+		Delay(2000);								// Simulate 2 seconds delay
 		Print_Temp();								// Print temperature
 	}
 }
